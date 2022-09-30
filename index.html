@@ -1,17 +1,63 @@
 <!DOCTYPE html>
 <html>
 	<head>
+	<style>
+	table, th, td{
+		border: 1px solid black;
+	}
+	</style>
 		<title>Davey Jones</title>
 	</head>
 	<body>
 		<nav>
-			<a href="about.html/">About</a>
+			<ul>
+				<li><a href="about.html">| About |</a></li>
+				<li><a href="contact.html"> Contact |</a></li>
+				<li><a href="https://www.redbubble.com/people/crazydave451/shop"> Shop |</a></li>
+			</ul>
 		</nav>
-		<h1>Davey Jones</h1>
-		<img src="images/summertime-wine.png" alt="Summertime Wine" width="258" height="258">
-		<img src="images/tug-boat.png" alt="Summertime Wine" width="228" height="258">
-		<p>Step over to the other side...</p>
-		<p>...and see the work of Davey Jones</p>
+		
+		<header>
+			<h1>Davey Jones</h1>
+		</header>
+		
+		<section>
+			<img src="images/ghost-logo.png" alt="Logo" width="258" height="258">
+			<p>Step over to the other side...</p>
+			<p>...and see the work of Davey Jones</p>
+			<table>
+				<tr>
+					<th>Top Products</th>
+				</tr>
+				<tr>
+					<td><img src="images/summertime-wine.png" alt="Summertime Wine" width="258" height="258"></td>
+					<td><img src="images/tug-boat.png" alt="Tug Boat" width="228" height="258"></td>
+					<td><img src="images/greg.png" alt="Gregory" width="245" height="258"></td>
+				</tr>
+				<tr>
+					<td>Print 19x13: $75</td>
+					<td>Print 19x13: $75</td>
+					<td>Print 19x13: $50</td>
+				</tr>
+				<tr>
+					<td>Framed 19x13: $100</td>
+					<td>Framed 19x13: $100</td>
+					<td>Framed 19x13: $75</td>
+			</table>
+			<iframe src="https://www.instagram.com/daveyjones451/" title="Davey Jones Instagram">
+			</iframe>
 			<a href="https://www.instagram.com/daveyjones451/">Davey Jones Instagram</a>
+		</section>
+		
+		<footer>
+			<p>Join our mailing list</p>
+			<form>
+				<label for="name">Name:</label>
+				<input type="text" id="name" name="name"><br>
+				<label for="email">Email:</label>
+				<input type="email" id="email" name"email"><br>
+				<input type="submit" value="Submit">
+			</form>
+		</footer>
 	</body>
 </html>
