@@ -1,7 +1,43 @@
 /*Body styling*/
 body{
 	background: #000000;
+	/*color: #ffffff;
+	font-family: 'Freestyle Script', sans-serif;*/
+	font-size: 27px;
+}
+
+/*Heading Styles*/
+h1{
+	color: #ffffff;
+	font-family: ''
+}
+
+p{
 	color: #ffffff;
 	font-family: 'Freestyle Script', sans-serif;
-	font-size: 27px;
+}
+
+/*Navbar styling*/
+ul{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	width: 150px;
+	background-color: #ffffff;
+	font-family: 'Freestyle Script', sans-serif;
+}
+
+li {
+	float: left;
+}
+
+li a{
+	display: block;
+	color: #000;
+	padding: 8px 16px;
+}
+
+/*Navbar on hover*/
+li a:hover {
+	background-color: #757575;
 }
