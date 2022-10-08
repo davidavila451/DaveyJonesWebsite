@@ -33,14 +33,18 @@ a {
 	background-color: #ffffff;
 	color: black;
 	font-size: 35px;
-	display: inline-block
+	display: inline-block;
+	text-decoration: none;
 }	
 
 /*Image styling*/
 img{
-	display: block;
+	/*display: block;
 	margin-left: auto;
-	margin-right: auto;
+	margin-right: auto;*/
+	object-fit: contain;
+	max-width: 100%
+	
 }
 
 /*Navbar styling*/
@@ -48,25 +52,64 @@ ul{
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
-	width: 150px;
-	background-color: #ffffff;
+}
+
+.stacknav {
+	overflow: hidden;
+	background-color: white;
+}
+
+/*Navbar link styling*/
+.stacknav a {
+	float: left;
+	display: block;
+	color: black;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
 	font-family: 'Freestyle Script', sans-serif;
 }
 
-li a{
-	display: block;
-	color: #000;
-	padding: 8px 16px;
+/*Navbar styling on hover*/
+.stacknav a:hover {
+	background-color: #757575;
+	color: black;
 }
 
-/*Navbar styling on hover*/
-li a:hover {
-	background-color: #757575;
+input[type=text], select {
+	width: 100%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	display: block;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+}
+	
+input[type=email], select {
+	width: 100%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	display: block;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+}
+	
+input[type=submit] {
+	width: 100%;
+	background-color: white;
+	color: black;
+	padding: 14px 20px;
+	margin: 8px 0;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
 }
 
 /*For mobile*/
 /*Media Querry*/
-@media screen and (max-width: 1050px){
+@media screen and (max-width: 480px){
 	body{
 		background: #000000;
 	}
@@ -75,7 +118,7 @@ li a:hover {
 	header{
 		color: #ffffff;
 		font-family: 'Brush Script MT', cursive;
-		font-size: 25px;
+		font-size: 30px;
 		text-align: center;
 	}
 
@@ -83,7 +126,7 @@ li a:hover {
 	section{
 		color: #ffffff;
 		font-family: 'Freestyle Script', sans-serif;
-		font-size: 20px;
+		font-size: 25px;
 		text-align: center;
 	}
 
@@ -91,41 +134,19 @@ li a:hover {
 	footer{
 		color: #ffffff;
 		font-family: 'Freestyle Script', sans-serif;
-		font-size: 35px;
+		font-size: 25px;
 	}
 
 	a {
 		background-color: #ffffff;
 		color: black;
-		font-size: 35px;
+		font-size: 25px;
 		display: inline-block
 	}	
 
-	/*Image styling*/
-	img{
-		display: block;
-		margin-left: auto;
-		margin-right: auto;
+	.stacknav a{
+		float: none;
+		width: 100%;
 	}
 
-	/*Navbar styling*/
-	ul{
-		list-style-type: none;
-		margin: 0;
-		padding: 0;
-		width: 150px;
-		background-color: #ffffff;
-		font-family: 'Freestyle Script', sans-serif;
-	}
-
-	li a{
-		display: block;
-		color: #000;
-		padding: 8px 16px;
-	}
-
-	/*Navbar styling on hover*/
-	li a:hover {
-		background-color: #757575;
-	}
 }
